@@ -40,25 +40,30 @@ s.n. dasgupta
 ^d
 ```
 ### Display the content of the files
-cat < file1
-## OUTPUT
+
+### cat < file1
+<img width="266" height="170" alt="image" src="https://github.com/user-attachments/assets/3f01a7e0-8547-44d3-9fce-77c8f16098c9" />
 
 
 
-cat < file2
-## OUTPUT
+### cat < file2
+
+<img width="238" height="186" alt="image" src="https://github.com/user-attachments/assets/7cfb35e9-a9f1-4c5b-a146-34fcd9c9cce0" />
 
 
 # Comparing Files
-cmp file1 file2
-## OUTPUT
+### cmp file1 file2
+
+ <img width="371" height="73" alt="image" src="https://github.com/user-attachments/assets/588997a9-9e56-4ae4-979c-70fc7971e67b" />
+
+### comm file1 file2
  
-comm file1 file2
- ## OUTPUT
+<img width="365" height="356" alt="image" src="https://github.com/user-attachments/assets/397cd5ba-4486-4ea3-a5ea-cb4c809cf83d" />
 
  
-diff file1 file2
-## OUTPUT
+### diff file1 file2
+
+<img width="312" height="348" alt="image" src="https://github.com/user-attachments/assets/ef473b3b-bbf7-4c25-afa6-35f5e05628f6" />
 
 
 #Filters
@@ -79,20 +84,23 @@ cat > file22
 ^d
 ```
 
-
-cut -c1-3 file11
 ## OUTPUT
+### cut -c1-3 file11
+
+<img width="285" height="177" alt="image" src="https://github.com/user-attachments/assets/35223d95-e07c-4613-a31a-b703c876fd31" />
 
 
 
 
-cut -d "|" -f 1 file22
-## OUTPUT
+### cut -d "|" -f 1 file22
+
+<img width="292" height="168" alt="image" src="https://github.com/user-attachments/assets/867fdef3-2a17-4ad5-8daf-ee2369e0c7b5" />
 
 
 
-cut -d "|" -f 2 file22
-## OUTPUT
+### cut -d "|" -f 2 file22
+
+<img width="303" height="172" alt="image" src="https://github.com/user-attachments/assets/74e148af-af6b-4bb5-bc05-44aa4c805667" />
 
 
 cat < newfile 
@@ -104,43 +112,32 @@ hello world
 cat > newfile 
 Hello world
 hello world
+
+## OUTPUT
  
-grep Hello newfile 
-## OUTPUT
+### grep Hello newfile 
+<img width="302" height="52" alt="image" src="https://github.com/user-attachments/assets/4cab2167-b2a6-42ad-bdcc-a925d9e6ffd1" />
 
 
+### grep -v hello newfile 
 
-grep hello newfile 
-## OUTPUT
+<img width="282" height="76" alt="image" src="https://github.com/user-attachments/assets/2ee48064-5be9-4470-97c0-ca3271c8d619" />
 
-
-
-
-grep -v hello newfile 
-## OUTPUT
+### cat newfile | grep -i "hello"
+<img width="398" height="83" alt="image" src="https://github.com/user-attachments/assets/e5e2f4f1-b40b-45a6-803a-ade01ed22886" />
 
 
-
-cat newfile | grep -i "hello"
-## OUTPUT
-
+### cat newfile | grep -i -c "hello"
+<img width="432" height="81" alt="image" src="https://github.com/user-attachments/assets/3238b0be-761e-421c-b99f-e5668c25f6dd" />
 
 
+### grep -R ubuntu /etc
 
-cat newfile | grep -i -c "hello"
-## OUTPUT
+<img width="938" height="323" alt="image" src="https://github.com/user-attachments/assets/ccd07de2-5b07-4d72-98af-bc0a45a47561" />
 
+### grep -w -n world newfile   
 
-
-
-grep -R ubuntu /etc
-## OUTPUT
-
-
-
-grep -w -n world newfile   
-## OUTPUT
-
+<img width="341" height="77" alt="image" src="https://github.com/user-attachments/assets/6076164a-63f8-4922-9521-61dd51d5e108" />
 
 cat < newfile 
 ```
@@ -161,61 +158,43 @@ Unix is predecessor
 Linux is best in this World
 ^d
  ```
-egrep -w 'Hello|hello' newfile 
-## OUTPUT
+
+### egrep -w 'Hello|hello' newfile 
+
+<img width="382" height="78" alt="image" src="https://github.com/user-attachments/assets/61610730-6bdf-495b-a8da-f13f6f3fe8d8" />
+
+
+### egrep -w '(H|h)ell[a-z]' newfile 
+
+<img width="412" height="82" alt="image" src="https://github.com/user-attachments/assets/50fa270a-e5e5-433b-8850-9f75abd6d44c" />
+
+### egrep '(^hello)' newfile 
+
+<img width="353" height="73" alt="image" src="https://github.com/user-attachments/assets/0ebb3324-e0d4-4b62-94ec-2d1850975395" />
+
+### egrep '(world$)' newfile 
+
+<img width="341" height="75" alt="image" src="https://github.com/user-attachments/assets/2b72e4ed-9fc3-42e1-b9d7-56918534c671" />
+
+### egrep '((W|w)orld$)' newfile 
+
+<img width="366" height="97" alt="image" src="https://github.com/user-attachments/assets/601960ca-5123-4979-adc7-df8053f81149" />
+
+### egrep '[1-9]' newfile 
 
 
 
-egrep -w '(H|h)ello' newfile 
-## OUTPUT
+
+### egrep 'Linux.*world' newfile 
 
 
-
-egrep -w '(H|h)ell[a-z]' newfile 
-## OUTPUT
+### egrep l{2} newfile
 
 
 
 
-egrep '(^hello)' newfile 
-## OUTPUT
+### egrep 's{1,2}' newfile
 
-
-
-egrep '(world$)' newfile 
-## OUTPUT
-
-
-
-egrep '(World$)' newfile 
-## OUTPUT
-
-
-egrep '((W|w)orld$)' newfile 
-## OUTPUT
-
-
-
-egrep '[1-9]' newfile 
-## OUTPUT
-
-
-
-egrep 'Linux.*world' newfile 
-## OUTPUT
-
-
-egrep 'Linux.*World' newfile 
-## OUTPUT
-
-
-egrep l{2} newfile
-## OUTPUT
-
-
-
-egrep 's{1,2}' newfile
-## OUTPUT 
 
 
 cat > file23
