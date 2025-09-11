@@ -182,19 +182,20 @@ Linux is best in this World
 
 ### egrep '[1-9]' newfile 
 
-
-
+<img width="287" height="53" alt="image" src="https://github.com/user-attachments/assets/9d91194b-f23d-4a62-a8df-e9e92efe96ba" />
 
 ### egrep 'Linux.*world' newfile 
+
+<img width="377" height="61" alt="image" src="https://github.com/user-attachments/assets/4572697f-bfae-4ed4-8525-6c948c7027a7" />
 
 
 ### egrep l{2} newfile
 
-
-
+<img width="283" height="52" alt="image" src="https://github.com/user-attachments/assets/473eab02-071a-48a8-8fb6-dada3d1b1d2f" />
 
 ### egrep 's{1,2}' newfile
 
+<img width="307" height="103" alt="image" src="https://github.com/user-attachments/assets/c4fe5745-d7ae-4a0d-9d2b-338b317e3337" />
 
 
 cat > file23
@@ -209,83 +210,63 @@ cat > file23
 1001 | Ram | 10000 | HR
 ^d
 ```
+## Output
+
+## sed -n -e '3p' file23
+<img width="295" height="80" alt="image" src="https://github.com/user-attachments/assets/810467bc-8915-4d91-bdba-20f4ccf6bea0" />
+
+### sed -n -e '$p' file23
+<img width="315" height="75" alt="image" src="https://github.com/user-attachments/assets/c487b11d-4b17-41b9-a605-216a7596e5b9" />
+
+### sed  -e 's/Ram/Sita/' file23
+
+<img width="346" height="251" alt="image" src="https://github.com/user-attachments/assets/032255f7-7b03-473d-ac05-98322a7efb09" />
 
 
-sed -n -e '3p' file23
-## OUTPUT
+### sed  -e '2s/Ram/Sita/' file23
+
+<img width="358" height="252" alt="image" src="https://github.com/user-attachments/assets/a433805a-fff2-4ded-a814-4951d2220b81" />
+
+### sed  '/tom/s/5000/6000/' file23
+
+<img width="395" height="247" alt="image" src="https://github.com/user-attachments/assets/77cce062-c9c8-4b80-958e-84e053a10f6e" />
+
+### sed -n -e '1,5p' file23
+<img width="326" height="178" alt="image" src="https://github.com/user-attachments/assets/6ea6f6ac-2fde-4c44-9d16-940067132012" />
 
 
+### sed -n -e '2,/Joe/p' file23
 
-sed -n -e '$p' file23
-## OUTPUT
+<img width="357" height="137" alt="image" src="https://github.com/user-attachments/assets/79c92ea7-c4e4-46e0-b58e-883e5c8146cc" />
 
+### sed -n -e '/tom/,/Joe/p' file23
 
+<img width="391" height="96" alt="image" src="https://github.com/user-attachments/assets/4df59614-0295-416c-a993-8f75a22ef5f3" />
 
-sed  -e 's/Ram/Sita/' file23
-## OUTPUT
+### seq 10 
 
-
-
-sed  -e '2s/Ram/Sita/' file23
-## OUTPUT
+<img width="277" height="288" alt="image" src="https://github.com/user-attachments/assets/c46ae2ef-c68e-41a0-b79f-c72c4e676f1a" />
 
 
+### seq 10 | sed -n '4,6p'
+<img width="315" height="132" alt="image" src="https://github.com/user-attachments/assets/51f8bff7-b48e-48f8-b32e-40674091b954" />
 
-sed  '/tom/s/5000/6000/' file23
-## OUTPUT
-
-
-
-sed -n -e '1,5p' file23
-## OUTPUT
+### seq 10 | sed -n '2,~4p'
 
 
-
-sed -n -e '2,/Joe/p' file23
-## OUTPUT
+### seq 3 | sed '2a hello'
 
 
+### seq 2 | sed '2i hello'
 
 
-sed -n -e '/tom/,/Joe/p' file23
-## OUTPUT
+### seq 10 | sed '2,9c hello'
 
 
-
-seq 10 
-## OUTPUT
+### sed -n '2,4{s/^/$/;p}' file23
 
 
-
-seq 10 | sed -n '4,6p'
-## OUTPUT
-
-
-
-seq 10 | sed -n '2,~4p'
-## OUTPUT
-
-
-
-seq 3 | sed '2a hello'
-## OUTPUT
-
-
-
-seq 2 | sed '2i hello'
-## OUTPUT
-
-
-seq 10 | sed '2,9c hello'
-## OUTPUT
-
-
-sed -n '2,4{s/^/$/;p}' file23
-## OUTPUT
-
-
-
-sed -n '2,4{s/$/*/;p}' file23
+### sed -n '2,4{s/$/*/;p}' file23
 
 
 #Sorting File content
