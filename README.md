@@ -415,17 +415,6 @@ ps
 <img width="372" height="106" alt="image" src="https://github.com/user-attachments/assets/f4ad319a-8ede-4d11-ad1e-0c07ce7f00bf" />
 
 ### echo $?
-<img width="363" height="77" alt="image" src="https://github.com/user-attachments/assets/18715c20-01e5-4460-8b0e-889d6c8ad6bc" />
-
-./one
-bash: ./one: Permission denied
- 
-### echo $?
- <img width="363" height="77" alt="image" src="https://github.com/user-attachments/assets/596afe71-ee32-486e-87f9-b6924e14141e" />
- 
-### abcd
- 
-### echo $?
 <img width="363" height="77" alt="image" src="https://github.com/user-attachments/assets/089bd8e5-20ff-485c-95b6-598074ae7a1c" />
 
  
@@ -492,6 +481,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+<img width="580" height="176" alt="image" src="https://github.com/user-attachments/assets/ece887fb-13ac-4105-b9e4-4b9cc0a28e13" />
 
 # check if with file location
 cat>ifnested.sh 
@@ -499,19 +489,19 @@ cat>ifnested.sh
 \#!/bin/bash
 if [ -e $HOME ]
 then
-echo “$HOME The object exists, is it a file?”
+echo "$HOME The object exists, is it a file?"
 if [ -f $HOME ]
 then
-echo “Yes,$HOME it is a file!”
+echo "Yes,$HOME it is a file!"
 else
-echo “No,$HOME it is not a file!”
+echo "No,$HOME it is not a file!"
 if [ -f $HOME/.bash_history ]
 then
-echo “But $HOME/.bash_history is a file!”
+echo "But $HOME/.bash_history is a file!"
 fi
 fi
 else
-echo “Sorry, the object does not exist”
+echo "Sorry, the object does not exist"
 fi
 ^d
 ```
@@ -539,7 +529,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
-
+<img width="512" height="212" alt="image" src="https://github.com/user-attachments/assets/67df83f7-9732-4478-98b3-011565bfca24" />
 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -582,6 +572,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+<img width="425" height="157" alt="image" src="https://github.com/user-attachments/assets/80505fe8-e350-4274-8655-3f96fb7efb16" />
 
 # check if a file
 cat > ifnested.sh 
@@ -630,7 +621,9 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+## OUTPUT
+
+<img width="518" height="167" alt="image" src="https://github.com/user-attachments/assets/b12f5491-f5ef-4026-aaaf-a84fe560c191" />
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -660,6 +653,7 @@ $ chmod 755 elifcheck.sh
 $ ./elifcheck.sh 
 ## OUTPUT
 
+<img width="352" height="165" alt="image" src="https://github.com/user-attachments/assets/66ae9377-b7bc-4db5-8367-64f4251a87bf" />
 
 # testing compound comparisons
 cat> ifcompound.sh 
